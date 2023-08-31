@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCT ACADEMY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="VCT Academy Logo">
+            <h1>VCT ACADEMY</h1>
+        </div>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Achievement</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+            
+        </nav>
+
+        <a class="enroll" href="#"><button>Enroll</button></a>
+
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown-menu">
+            <ul class="">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Achievement</a></li>
+                <li><a href="#">Message Us</a></li>
+                <li><a class="action-btn" href="#"><button>Enroll</button></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- POP UP FORM -->
+    <div class="popup">
+        <div class="popup-form">
+            <h1>Tell us your name</h1>
+            <form name="user-form" onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Type your name...">
+                <p id="error-name"></p>
+                <input type="submit" id="submit" value="Submit">
+                
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Content -->
+    <div class="container-body">
+        <div class="content">
+            <h1>Welcome, <span id="user-name"></span></h1>
+            <div class="image-slide">
+                <div class="auto-slide" id="img1">
+                </div>
+                <div class="auto-slide" id="img2">
+                </div>
+                <div class="auto-slide" id="img3">
+                </div>
+            </div>
+        </div>
+        <div class="feature">
+            <h1>Our Facilitation</h1>
+            <div class="feature-wrapper">
+                <div class="card">
+                    <div class="bullet">
+                    </div>
+                    <span>Professional Tutor</span>
+                </div>
+                
+                <div class="card">
+                    <div class="bullet">
+                    </div>
+                    <span>Classroom</span>
+                </div>
+                <div class="card">
+                    <div class="bullet">
+                    </div>
+                    <span>Sport Field</span>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <h1>Message US</h1>
+            <div class="container-message">
+                <form action="POST">
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><input type="text" id="name" name="name" placeholder="Name..."></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td><input type="text" id="Email" name="Email" placeholder="Email..."></td>
+                        </tr>
+                        <tr>
+                            <td>Birth date</td>
+                            <td>:</td>
+                            <td><input type="text" id="birthdate" name="birthdate" placeholder="Birthdate..."></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="man" name="gender">
+                                <label for="man">Man</label>
+                                <input type="radio" id="Woman" name="gender">
+                                <label for="Woman">Woman</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td>:</td>
+                            <td><textarea name="message" id="message" cols="30" rows="3" placeholder="Message..."></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><button>Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="user-message">
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td> : </td>
+                            <td><p class="username"></p></td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td> : </td>
+                            <td><p class="userMessage"></p></td>
+                        </tr>
+                        <tr></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h2>RevoU</h2>
+    </footer>
+    
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
